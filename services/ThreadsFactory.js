@@ -2,7 +2,9 @@ hackerNews.factory('ThreadsFactory', function ThreadsFactory() {
   var factory = {};
   factory.threads = [];
   factory.addThread = function() {
-    factory.threads.push({ name: factory.threadName, id: factory.threads.length + 1, comments: [], url: factory.threadUrl, votes: 0, date: new Date(), ranking: 0, days: 0 });
+    factory.threads.push({ name: factory.threadName, id: factory.threads.length + 1,
+      comments: [], url: factory.threadUrl, votes: 0, date: new Date(), ranking: 0, days: 0 });
+      
     factory.threadName = null;
     factory.threadUrl = null;
 
