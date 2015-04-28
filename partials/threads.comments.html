@@ -1,5 +1,6 @@
 <div ng-show="thread.comments.length">
-  <h2>Comment List for {{ thread.name }}</h2>
+  <!-- List all comments for each thread -->
+  <h2>Comments for {{ thread.name }}</h2>
   <ul>
     <li ng-repeat="item in thread.comments">
       {{ item.text }}
@@ -8,6 +9,7 @@
 </div>
 
 <div id="commentbox">
+  <!-- Add comment form -->
   <h2>Add a comment to {{ thread.name }}</h2>
   <form ng-submit="addComment()" class="form-inline" role="form">
     <div class="form-group">

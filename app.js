@@ -14,10 +14,4 @@ hackerNews.config(function($stateProvider) {
     templateUrl: "partials/threads.comments.html",
     controller: "CommentsCtrl"
   });
-//another way for nesting votes inside threads.comments, using findById() instead of 'item'
-  // $stateProvider.state('threads.votes', {
-  //   url: "/:threadId",
-  //   templateUrl: "partials/threads.comments.html",
-  //   controller: "VotesCtrl"
-  // });
 });

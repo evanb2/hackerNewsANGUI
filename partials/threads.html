@@ -4,7 +4,7 @@
       <h4>Add a new Thread</h4>
     </div>
   </div>
-
+  <!-- Form for adding New Thread -->
   <div class="row">
     <form ng-submit="ThreadsFactory.addThread()" role="form">
       <div class="form-group col-lg-4">
@@ -22,6 +22,7 @@
 </div>
 
 <div ng-show="threads.length">
+  <!-- List of all threads, sorted by votes -->
   <h1>All Threads:</h1>
   <ul>
     <li id="thread" ng-repeat="item in threads | filter:ThreadsFactory.checkThread | orderBy:'-votes'">
