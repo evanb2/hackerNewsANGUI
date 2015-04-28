@@ -45,7 +45,7 @@
           <h5>user: {{ item.user }}</h5>
         </div>
         <div class="col-sm-2">
-          <button ui-sref="threads.comments({ threadId: item.id })">Comment</button>
+          <button ui-sref="threads.comments({ threadId: item.id })" class="btn btn-primary btn-sm">Comment</button>
         </div>
         <div class="col-sm-2">
           <p>{{ item.date | date:'HH:mm MM-dd-yyyy' }}</p>
