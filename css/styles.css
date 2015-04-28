@@ -5,12 +5,14 @@
   background-color: black;
 }
 
-
-
 #post {
   margin-top: 15px;
 }
 
 ul  {
   list-style: none;
+}
+
+#commentbox {
+  margin-bottom: 100px;
 }
