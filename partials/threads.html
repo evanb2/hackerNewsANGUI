@@ -24,7 +24,7 @@
 <div ng-show="threads.length">
   <h1>All Threads:</h1>
   <ul>
-    <li ng-repeat="item in threads | filter:ThreadsFactory.checkThread | orderBy:'-votes'">
+    <li id="thread" ng-repeat="item in threads | filter:ThreadsFactory.checkThread | orderBy:'-votes'">
       <div class="row threads">
         <div class="col-sm-2">
           <button ng-click="ThreadsFactory.plusVote(item)" type="button" class="btn btn-default btn-xs" aria-label="Left Align">
